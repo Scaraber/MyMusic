@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySonglistBinding
     private lateinit var cardbind: SongCardBinding
-
+    //comment
     companion object{
         lateinit var MusicListMA : ArrayList<Song>
     }
