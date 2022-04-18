@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivitySonglistBinding.inflate(layoutInflater)
         cardbind = SongCardBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //cardbind.cardLayout.setOnClickListener(playSong(cardbind.cardLayout[])
+
 
         MusicListMA = getAllAudio()
 
@@ -43,7 +43,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun playSong(): View.OnClickListener? {
-        Toast.makeText(this, )
+        Toast.makeText(this, "b",Toast.LENGTH_SHORT).show()
+        return null;
     }
 
     private fun requestRuntimePermision(){
