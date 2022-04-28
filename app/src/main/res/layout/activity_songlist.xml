@@ -7,41 +7,24 @@
     android:padding="3dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
         android:orientation="horizontal"
+        android:scrollbarSize="0dp"
+        app:itemBackground="@drawable/ic_launcher_background"
+        app:itemHorizontalTranslationEnabled="true"
+        app:itemIconSize="0dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/navigation_element"
 
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Songs"
-            android:padding="5dp"
-            ></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Favorites"
-            android:padding="5dp"
-            ></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Artists"
-            android:padding="5dp"
-            ></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Albums"
-            android:padding="5dp"
-            ></TextView>
+        tools:layout_editor_absoluteX="3dp" />
 
 
-    </LinearLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         app:layout_constraintTop_toBottomOf="@id/top_menu"
