@@ -11,7 +11,7 @@ import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import fri.uniza.mymp3player.R
-import fri.uniza.mymp3player.models.Song
+import fri.uniza.mymp3player.model.Song
 import java.io.File
 
 class ItemAdapter(
