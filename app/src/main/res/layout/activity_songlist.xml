@@ -10,13 +10,11 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/top_menu"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:animateLayoutChanges="true"
         android:orientation="horizontal"
-        android:scrollbarSize="0dp"
         app:itemBackground="@drawable/ic_launcher_background"
         app:itemHorizontalTranslationEnabled="true"
-        app:itemIconSize="0dp"
         app:labelVisibilityMode="labeled"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/navigation_element"
@@ -24,15 +22,17 @@
         tools:layout_editor_absoluteX="3dp" />
 
 
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        app:layout_constraintTop_toBottomOf="@id/top_menu"
-        android:id="@+id/song_list"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/songlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        app:layoutManager="LinearLayoutManager"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_menu"
+        tools:layout="@layout/fragment_songlist"
+        android:visibility="gone" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

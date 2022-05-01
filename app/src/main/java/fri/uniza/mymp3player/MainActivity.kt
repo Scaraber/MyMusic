@@ -13,17 +13,19 @@ import androidx.recyclerview.widget.RecyclerView
 import fri.uniza.mymp3player.adapter.ItemAdapter
 import fri.uniza.mymp3player.databinding.ActivitySonglistBinding
 import fri.uniza.mymp3player.databinding.SongCardBinding
-import fri.uniza.mymp3player.models.Song
+import fri.uniza.mymp3player.model.Song
 import java.io.File
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySonglistBinding
     private lateinit var cardbind: SongCardBinding
-    //comment
+
     companion object{
         lateinit var MusicListMA : ArrayList<Song>
+        lateinit var PlayLists : ArrayList<ArrayList<Song>>
     }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivitySonglistBinding.inflate(layoutInflater)
         cardbind = SongCardBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         MusicListMA = getAllAudio()
 

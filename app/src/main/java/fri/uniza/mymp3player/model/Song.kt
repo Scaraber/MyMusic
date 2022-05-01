@@ -1,4 +1,4 @@
-package fri.uniza.mymp3player.models
+package fri.uniza.mymp3player.model
 //TODO zmen z data class na normalnu
 data class Song(
     var id: String,
