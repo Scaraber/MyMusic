@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_songlist"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="3dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_menu"
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/songlist_navigation"
+        />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/top_menu"
@@ -16,23 +33,31 @@
         app:itemBackground="@drawable/ic_launcher_background"
         app:itemHorizontalTranslationEnabled="true"
         app:labelVisibilityMode="labeled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/navigation_element"
-
-        tools:layout_editor_absoluteX="3dp" />
+        app:menu="@menu/navigation_element" />
 
 
-    <androidx.fragment.app.FragmentContainerView
+    <!--  <androidx.fragment.app.FragmentContainerView
         android:id="@+id/songlist"
+        android:name="fri.uniza.mymp3player.fragment.SongListFragment"
+        tools:layout="@layout/fragment_songlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/top_menu"
-        tools:layout="@layout/fragment_songlist"
-        android:visibility="gone" />
+        android:visibility="gone" /> -->
 
-
-
+<!--
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toTopOf="@id/top_menu"
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager"
+        /> -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

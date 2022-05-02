@@ -9,13 +9,14 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import fri.uniza.mymp3player.R
 import fri.uniza.mymp3player.model.Song
 import java.io.File
 
 class ItemAdapter(
-    private val context: Context, private val dataset: List<Song>
+    private val context: FragmentActivity?, private val dataset: List<Song>
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
@@ -39,7 +40,6 @@ class ItemAdapter(
         //TODO settings
         if(true) {
             holder.songName.ellipsize = TextUtils.TruncateAt.MARQUEE
-            //holder.songName.isSelected = true
             holder.songName.isSingleLine = true
         }
         holder.artist.text = item.artist

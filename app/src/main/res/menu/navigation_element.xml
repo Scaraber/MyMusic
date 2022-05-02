@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-
     >
     <!-- The background color, preferably the same as your normal theme -->
     <item
-        android:id="@+id/songs_item"
+        android:id="@+id/songListFragment"
         android:height="1dp"
 
         android:icon="@drawable/ic_baseline_library_music_24"
         android:title="Songs"></item>
-
-    <item
-        android:id="@+id/playlist_item"
-        android:height="1dp"
-        android:icon="@drawable/ic_baseline_queue_music_24"
-        android:title="Playlists"
-        android:visible="true"></item>
-    <item
-        android:id="@+id/artist_item"
-        android:height="1dp"
-        android:icon="@drawable/ic_launcher_foreground"
-        android:title="Artists"></item>
-    <item
-        android:id="@+id/favorites_item"
-        android:height="1dp"
-        android:icon="@drawable/ic_baseline_favorite_24"
-        android:title="Favorites"
-        android:visible="true"></item>
-</menu>
+    <!--
+        <item
+            android:id="@+id/playlist_item"
+            android:height="1dp"
+            android:icon="@drawable/ic_baseline_queue_music_24"
+            android:title="Playlists"
+            android:visible="true"></item> -->
+        <item
+            android:id="@+id/artistsFragment"
+            android:height="1dp"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Artists"></item>
+    <!--       <item
+               android:id="@+id/favorites_item"
+               android:height="1dp"
+               android:icon="@drawable/ic_baseline_favorite_24"
+               android:title="Favorites"
+               android:visible="true"></item> -->
+       </menu>

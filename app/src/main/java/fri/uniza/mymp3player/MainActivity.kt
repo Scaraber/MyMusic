@@ -19,34 +19,30 @@ import java.io.File
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySonglistBinding
-    private lateinit var cardbind: SongCardBinding
 
     companion object{
         lateinit var MusicListMA : ArrayList<Song>
-        lateinit var PlayLists : ArrayList<ArrayList<Song>>
+        //lateinit var PlayLists : ArrayList<ArrayList<Song>>
     }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestRuntimePermision()
+        MusicListMA = getAllAudio()
         //setContentView(R.layout.activity_songlist)
         binding = ActivitySonglistBinding.inflate(layoutInflater)
-        cardbind = SongCardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        MusicListMA = getAllAudio()
 
-        val recyclerView = findViewById<RecyclerView>(R.id.song_list)
-        recyclerView.adapter = ItemAdapter(this, MusicListMA)
 
-        recyclerView.setHasFixedSize(true)
+        //val recyclerView = findViewById<RecyclerView>(R.id.song_list)
+        //recyclerView.adapter = ItemAdapter(this, MusicListMA)
+
+        //recyclerView.setHasFixedSize(true)
     }
 
-    private fun playSong(): View.OnClickListener? {
-        Toast.makeText(this, "b",Toast.LENGTH_SHORT).show()
-        return null;
-    }
+
 
     private fun requestRuntimePermision(){
         if(ActivityCompat.checkSelfPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
