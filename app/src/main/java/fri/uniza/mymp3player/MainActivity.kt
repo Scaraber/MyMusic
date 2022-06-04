@@ -14,6 +14,8 @@ import fri.uniza.mymp3player.adapter.ItemAdapter
 import fri.uniza.mymp3player.databinding.ActivitySonglistBinding
 import fri.uniza.mymp3player.databinding.SongCardBinding
 import fri.uniza.mymp3player.model.Song
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import java.io.File
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +36,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivitySonglistBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        val navHostFragment  = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navController = navHostFragment.navController
+        binding.topMenu.setupWithNavController(navController)
 
         //val recyclerView = findViewById<RecyclerView>(R.id.song_list)
         //recyclerView.adapter = ItemAdapter(this, MusicListMA)

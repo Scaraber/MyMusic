@@ -27,7 +27,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/top_menu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:animateLayoutChanges="true"
         android:orientation="horizontal"
         app:itemBackground="@drawable/ic_launcher_background"

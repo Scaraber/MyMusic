@@ -4,9 +4,6 @@
     <!-- The background color, preferably the same as your normal theme -->
     <item
         android:id="@+id/songListFragment"
-        android:height="1dp"
-
-        android:icon="@drawable/ic_baseline_library_music_24"
         android:title="Songs"></item>
     <!--
         <item
@@ -17,8 +14,6 @@
             android:visible="true"></item> -->
         <item
             android:id="@+id/artistsFragment"
-            android:height="1dp"
-            android:icon="@drawable/ic_launcher_foreground"
             android:title="Artists"></item>
     <!--       <item
                android:id="@+id/favorites_item"
