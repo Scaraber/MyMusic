@@ -3,29 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/activity_playsong.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/activity_songlist.xml" value="0.25" />
-        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/fragment_albumlist.xml" value="0.33" />
-        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/fragment_artist_list.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/fragment_artists.xml" value="0.35104166666666664" />
-        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/fragment_favorites.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/fragment_song_list.xml" value="0.33" />
-        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/fragment_song_scroll.xml" value="0.33" />
-        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/fragment_songlist.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/activity_songlist.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/home_card.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/home_song_card.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/layout/song_card.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Patrik/AndroidStudioProjects/MyMusic/app/src/main/res/menu/navigation_element.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.255" />
+        <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.146" />
+        <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/drawable/ic_baseline_playlist_play_24.xml" value="0.146" />
         <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.255" />
         <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/layout/activity_playsong.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/layout/activity_songlist.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/layout/card_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/layout/fragment_artists.xml" value="0.1" />
+        <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/layout/fragment_songlist.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/layout/home_card.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/layout/home_song_card.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/layout/song_card.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bestg/AndroidStudioProjects/MyMP3Player2/app/src/main/res/menu/navigation_element.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
