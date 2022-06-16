@@ -1,0 +1,14 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:fri.uniza.mymp3player.activity/MainActivity.Companion///PointingToDeclaration/fri/uniza/mymp3player/activity/MainActivity.Companion.html
+$dokka.location:fri.uniza.mymp3player.activity/PlaySongActivity.Companion///PointingToDeclaration/fri/uniza/mymp3player/activity/PlaySongActivity.Companion.html
+$dokka.location:fri.uniza.mymp3player.adapter/ItemAdapter.ItemViewHolder///PointingToDeclaration/fri/uniza/mymp3player/adapter/ItemAdapter.ItemViewHolder.html
+$dokka.location:fri.uniza.mymp3player.fragment/SongListFragment.Companion///PointingToDeclaration/fri/uniza/mymp3player/fragment/SongListFragment.Companion.html
+$dokka.location:fri.uniza.mymp3player.service/MusicService.MSBinder///PointingToDeclaration/fri/uniza/mymp3player/service/MusicService.MSBinder.html
+fri.uniza.mymp3player.activity
+fri.uniza.mymp3player.adapter
+fri.uniza.mymp3player.data
+fri.uniza.mymp3player.fragment
+fri.uniza.mymp3player.model
+fri.uniza.mymp3player.service
+
