@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var prefs: SharedPreferences
 
-
     companion object{
         lateinit var binding: ActivitySonglistBinding
         lateinit var MusicListMA : ArrayList<Song>
@@ -53,8 +52,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         requestRuntimePermision()
         val list =  prefs.getString("songs", "empty")
-        val current = prefs.getString("currentSong", "empty")
+
         MusicListMA = getAllAudio()
+        val current = prefs.getString("currentSong", "empty")
         //ziska udaje zo shared preferences, osetrene proti null
         if (list != "empty") {
             if (list != null) {
@@ -64,11 +64,11 @@ class MainActivity : AppCompatActivity() {
         if (current != "empty") {
             if (current != null) {
                 currentSong = deserializeCurrent(current)
-            } else {
-                if (MusicListMA.size > 0)
-                currentSong = MusicListMA[0]
             }
+
+
         }
+        currentSong = MusicListMA[0]
 
         favorites = findFavorites()
         songlist = SongListFragment.newInstance(MusicListMA) as SongListFragment
