@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/alpha_asc"
+        android:title="Sort by Title (Asc)"
+        ></item>
+    <item
+        android:id="@+id/alpha_desc"
+        android:title="Sort by Title (Desc)"
+        ></item>
+    <item
+        android:id="@+id/author_asc"
+        android:title="Sort by Author (Asc)"
+        ></item>
+    <item
+        android:id="@+id/author_desc"
+        android:title="Sort by Author (Desc)"
+        ></item>
+    <item
+        android:id="@+id/date_asc"
+        android:title="Sort by Date (Asc)"
+        ></item>
+    <item
+        android:id="@+id/date_desc"
+        android:title="Sort by Date (Desc)"
+        ></item>
+
+</menu>

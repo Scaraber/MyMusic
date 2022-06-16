@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="fri.uniza.mymp3player">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
-
-
 
     <application
         android:allowBackup="true"
@@ -16,7 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyMP3Player">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.PlaySongActivity"
+            android:exported="false"
+            android:label="@string/title_activity_play_song"
+            android:theme="@style/Theme.MyMP3Player.NoActionBar" />
+        <activity
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".service.MusicService"/>
     </application>
 
 </manifest>
